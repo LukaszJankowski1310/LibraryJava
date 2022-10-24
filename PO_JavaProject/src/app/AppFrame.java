@@ -9,92 +9,93 @@ import javax.swing.JFrame;
 import javax.swing.JScrollPane;
 import javax.swing.JTable;
 
+
 public class AppFrame extends JFrame  {
 
   private final JFrame frame = new JFrame("Biblioteka");
   private final  JPanel panelContainer = new JPanel();
 
     // main panel
-    {
-        private final JPanel mainPanel = new JPanel();
+
+        final JPanel mainPanel = new JPanel();
 
 
-        private final JButton displayStateLibraryBtn = new JButton("STAN BIBLIOTEKI"); // Stan biblioteki, ilosc ksiazek, dodawnaie usuwanie itp.
-        private final JButton loginUserBtn = new JButton("ZALOGUJ CZYTELNIKA"); // JOption panel
-        private final JButton showUsersBtn = new JButton("UŻYTKOWNICY");  // lista uzytkownikow
+        final JButton displayStateLibraryBtn = new JButton("STAN BIBLIOTEKI"); // Stan biblioteki, ilosc ksiazek, dodawnaie usuwanie itp.
+        final JButton loginUserBtn = new JButton("ZALOGUJ CZYTELNIKA"); // JOption panel
+        final JButton showUsersBtn = new JButton("UŻYTKOWNICY");  // lista uzytkownikow
 
 
         // State library panel
 
-        private final JPanel libraryState = new JPanel();
+        final JPanel libraryState = new JPanel();
 
-        private final JPanel libraryStateButtonsPanel = new JPanel();
+        final JPanel libraryStateButtonsPanel = new JPanel();
 
-        private final JButton addBookBtn = new JButton("DODAJ KSIĄŻKĘ");
-        private final JButton deleteBookBtn = new JButton("USUŃ KSIĄŻKĘ");
-        private final JButton updateBookBtn = new JButton("AKTUALIZUJ");
-        private final JButton backToMainPanel1 = new JButton("COFNIJ");
+        final JButton addBookBtn = new JButton("DODAJ KSIĄŻKĘ");
+         final JButton deleteBookBtn = new JButton("USUŃ KSIĄŻKĘ");
+         final JButton updateBookBtn = new JButton("AKTUALIZUJ");
+         final JButton backToMainPanel1 = new JButton("COFNIJ");
 
-        private final JPanel libraryStateTablePanel = new JPanel();
-        private final JTable booksTable = new JTable();
-        private final DefaultTableModel booksTableModel = new DefaultTableModel();
+         final JPanel libraryStateTablePanel = new JPanel();
+         final JTable booksTable = new JTable();
+         final DefaultTableModel booksTableModel = new DefaultTableModel();
 
 
         // UserPanel
 
 
-        private final JPanel userPanel = new JPanel();
+         final JPanel userPanel = new JPanel();
 
-        private final JPanel userPanelButtons = new JPanel();
-        private final JButton borrowBookBtn = new JButton("WYPOŻYCZ KSIĄŻKĘ");
-        private final JButton returnBookBtn = new JButton("ODDAJ KSIĄŻKĘ");
-        private final JButton backToMainPanel2 = new JButton("COFNIJ");
+         final JPanel userPanelButtons = new JPanel();
+         final JButton borrowBookBtn = new JButton("WYPOŻYCZ KSIĄŻKĘ");
+         final JButton returnBookBtn = new JButton("ODDAJ KSIĄŻKĘ");
+         final JButton backToMainPanel2 = new JButton("COFNIJ");
 
-        private final JPanel userPanelLabels = new JPanel();
-        private final JLabel nameLabel = new JLabel("Imię: ");
-        private final JLabel surnameLabel = new JLabel("Nazwisko: ");
+         final JPanel userPanelLabels = new JPanel();
+         final JLabel nameLabel = new JLabel("Imię: ");
+         final JLabel surnameLabel = new JLabel("Nazwisko: ");
 
-        private final JPanel userPanelTable = new JPanel();
+         final JPanel userPanelTable = new JPanel();
 
-        private final JTable borrowedBooksTable = new JTable();
-        private final DefaultTableModel borrowedBooksModel = new DefaultTableModel();
+         final JTable borrowedBooksTable = new JTable();
+         final DefaultTableModel borrowedBooksModel = new DefaultTableModel();
 
 
         // all users panel
 
-        private final JPanel allUsersPanel = new JPanel();
-        private final JPanel allUsersButtonsPanel = new JPanel();
-        private final JButton addUserBtn = new JButton("DODAJ UŻYTKOWNIKA");
-        private final JButton deleteUserBtn = new JButton("USUŃ UŻYTKOWNIKA");
-        private final JButton updateUserBtn = new JButton("AKTUALIZUJ");
-        private final JButton backToMainPanel3 = new JButton("COFINJ");
-        private final JPanel allUsersTablePanel = new JPanel();
-        private final JTable usersTable = new JTable();
-        private final DefaultTableModel usersTableModel = new DefaultTableModel();
+         final JPanel allUsersPanel = new JPanel();
+         final JPanel allUsersButtonsPanel = new JPanel();
+         final JButton addUserBtn = new JButton("DODAJ UŻYTKOWNIKA");
+         final JButton deleteUserBtn = new JButton("USUŃ UŻYTKOWNIKA");
+         final JButton updateUserBtn = new JButton("AKTUALIZUJ");
+         final JButton backToMainPanel3 = new JButton("COFINJ");
+         final JPanel allUsersTablePanel = new JPanel();
+         final JTable usersTable = new JTable();
+         final DefaultTableModel usersTableModel = new DefaultTableModel();
 
 
         // borrow book panel
 
-        private final JPanel borrowBookPanel = new JPanel();
+         final JPanel borrowBookPanel = new JPanel();
 
-        private final JPanel borrowBookPanelButtons = new JPanel();
+         final JPanel borrowBookPanelButtons = new JPanel();
 
-        private final JButton borrowBookBtn2 = new JButton("WYPOŻYCZ");
-        private final JButton backToUserPanelBtn = new JButton("COFNIJ");
+         final JButton borrowBookBtn2 = new JButton("WYPOŻYCZ");
+         final JButton backToUserPanelBtn = new JButton("COFNIJ");
 
-        private final JPanel borrowBookPanelTable = new JPanel();
-        private final JTable availableBooksTable = new JTable();
-        private final DefaultTableModel availableBooksModel = new DefaultTableModel();
-        private final JPanel borrowBookPanelLabel = new JPanel();
-        private final JLabel borrowBookLabel = new JLabel("Dostępne ksiązki");
+         final JPanel borrowBookPanelTable = new JPanel();
+         final JTable availableBooksTable = new JTable();
+         final DefaultTableModel availableBooksModel = new DefaultTableModel();
+         final JPanel borrowBookPanelLabel = new JPanel();
+         final JLabel borrowBookLabel = new JLabel("Dostępne ksiązki");
 
 
-        private final CardLayout layout = new CardLayout();
+         final CardLayout layout = new CardLayout();
 
-        private final Library library;
-        private final String pathFile;
+         final Library library;
+         final String pathFile;
 
-    }
+
 
     private void loadLibraryStateTable() {
         booksTableModel.setNumRows(0);
